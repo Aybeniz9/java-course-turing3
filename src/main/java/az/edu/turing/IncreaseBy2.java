@@ -9,9 +9,10 @@ public class IncreaseBy2 {
         int[] arr = new int[n];
         if ( n <= 100) {
             for (int i = 0; i < n; i++) {
+                if (Math.abs(arr[i])<=100){
                 arr[i] = sc.nextInt();
 
-            }
+            }}
             for (int i = 0; i < n; i++) {
                 if (arr[i] >= 0) {
                     arr[i] +=2;
