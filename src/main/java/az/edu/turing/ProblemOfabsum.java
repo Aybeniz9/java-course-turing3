@@ -4,15 +4,16 @@ import java.util.Scanner;
 public class ProblemOfabsum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        for (int i = 0; i < num; i++) {
-            int cem = 0;
+        for (int i = 0; i < 2; i++) {
+
             int a = sc.nextInt();
             int b = sc.nextInt();
-            if (Math.abs(a) <= 3 * Math.pow(10, 3) && Math.abs(b) <= 3 * Math.pow(10, 3)) {
-                cem += a + b;
+            if (Math.abs(a) <= 30000 && Math.abs(b) <= 30000) {
+
+                System.out.println(a+b);
+
             }
-            System.out.println(cem);
         }
+
     }
 }
