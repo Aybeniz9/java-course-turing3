@@ -7,6 +7,7 @@ public class ReverseNumber {
         long n = scanner.nextInt();
         long reversedNumber = 0;
 
+
         while (n > 0) {
             long digit = n % 10;
             reversedNumber = reversedNumber * 10 + digit;
