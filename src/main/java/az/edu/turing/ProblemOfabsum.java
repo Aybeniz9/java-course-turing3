@@ -7,8 +7,9 @@ public class ProblemOfabsum {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < 2; i++) {
 
-            long  a = sc.nextLong();
-            long b = sc.nextLong();
+            double  a = sc.nextDouble();
+            double b = sc.nextDouble();
+
             if (Math.abs(a) <= 30000 && Math.abs(b) <= 30000) {
                 System.out.println(a + b);
             }

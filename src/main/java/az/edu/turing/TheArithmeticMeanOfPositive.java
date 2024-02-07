@@ -14,18 +14,21 @@ public class TheArithmeticMeanOfPositive {
             }
             for (int i = 0; i < n; i++) {
 
-                    if (numbers[i] > 0) {
-                        cem += numbers[i];
-                    }
-                    else {
-                        System.out.print("Not Found");
-                        break;
-                    }
-                    System.out.printf("%.2f", cem / 2);
+                if (numbers[i] > 0) {
+                    cem += numbers[i];
 
+                    break;
+                } else {
+                    System.out.print("Not Found");
+                    break;
                 }
-
             }
         }
+        System.out.printf("%.2f", cem / 2);
+
     }
+
+        }
+
+
 

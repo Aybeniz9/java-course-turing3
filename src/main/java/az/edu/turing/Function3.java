@@ -8,6 +8,6 @@ public class Function3 {
           double x = sc.nextDouble();
             double y = sc.nextDouble();
             double f = x * x + Math.sin(x * y) - y * y;
-            System.out.printf("%.4f\n", f);
+            System.out.printf("%.4f", f);
         }
     }
