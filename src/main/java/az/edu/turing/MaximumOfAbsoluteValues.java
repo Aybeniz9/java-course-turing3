@@ -15,8 +15,8 @@ public class MaximumOfAbsoluteValues {
             }
             double max = numbers[0];
             for (int i = 0; i < n; i++) {
-                if (numbers[i] > max) {
-                    max = numbers[i];
+                if (Math.abs(numbers[i]) > max) {
+                    max = Math.abs(numbers[i]);
                 }}
                 System.out.printf("%.2f",max);
         }

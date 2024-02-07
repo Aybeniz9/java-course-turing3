@@ -13,18 +13,19 @@ public class TheArithmeticMeanOfPositive {
                 numbers[i] = sc.nextDouble();
             }
             for (int i = 0; i < n; i++) {
-                if (Math.abs(numbers[i]) <= 100) {
+
                     if (numbers[i] > 0) {
                         cem += numbers[i];
-                        System.out.printf("%.2f", cem / 2);
-                        break;
-                    } else {
+                    }
+                    else {
                         System.out.print("Not Found");
                         break;
                     }
+                    System.out.printf("%.2f", cem / 2);
+
                 }
 
             }
         }
     }
-}
+
