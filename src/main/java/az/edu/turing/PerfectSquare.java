@@ -16,6 +16,6 @@ public class PerfectSquare {
             System.out.println(m);
         }
         else {
-            System.out.println("NO");
+            System.out.println("No");
         }
 }}}

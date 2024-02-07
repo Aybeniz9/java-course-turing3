@@ -7,9 +7,9 @@ public class IncreaseBy2 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
-        if ( n <= 100) {
+        if (n>0 && n <= 100) {
             for (int i = 0; i < n; i++) {
-                if (Math.abs(arr[i])<=100){
+                if (arr[i]<=100){
                 arr[i] = sc.nextInt();
 
             }}
@@ -18,7 +18,7 @@ public class IncreaseBy2 {
                     arr[i] +=2;
                 }
             }  for (int i = 0; i < n; i++) {
-                System.out.println(arr[i]);}
+                System.out.print(arr[i]+" ");}
             }
         }
     }

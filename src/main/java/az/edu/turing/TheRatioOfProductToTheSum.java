@@ -6,7 +6,6 @@ public class TheRatioOfProductToTheSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-
         double sum = 0;
         double k = 0;
         if (n >= 0 && n <= 2 * Math.pow(10, 9)) {

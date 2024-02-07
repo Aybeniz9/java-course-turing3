@@ -19,7 +19,7 @@ public class TheArithmeticMeanOfPositive {
                         System.out.printf("%.2f", cem / 2);
                         break;
                     } else {
-                        System.out.println("Not Found");
+                        System.out.print("Not Found");
                         break;
                     }
                 }
