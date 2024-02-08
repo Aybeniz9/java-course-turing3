@@ -6,7 +6,7 @@ public class TheFrstisnotGreaterFor25 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int index = 0;
+        int index = 1;
         boolean found = false;
         double[] arr = new double[n];
         double value = 0;
