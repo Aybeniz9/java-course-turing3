@@ -6,21 +6,18 @@ public class NegativeElements {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        double[] numbers = new double[n];
+        for (int i = 0; i < n; i++) {
+            numbers[i] = sc.nextDouble();
+        }
+        double sum = 0;
         int count = 0;
-        double cem = 0;
-        double[] arr = new double[n];
-        if (n > 0 && n <= 100) {
-            for (int i = 0; i < n; i++) {
-                arr[i] = sc.nextDouble();}
-            for (int i = 0; i < arr.length; i++) {
-                if (Math.abs(arr[i]) < 100) {
-                    if (arr[i] < 0) {
-                        cem += arr[i];
-                        count++;
-                    }
-                }
+        for (double num : numbers) {
+            if (num < 0) {
+                sum += num;
+                count++;
             }
         }
-        System.out.printf("%d %.2f ", count, cem);
+        System.out.printf("%d %.2f", count, sum);
     }
 }
