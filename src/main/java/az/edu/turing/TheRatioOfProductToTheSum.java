@@ -7,23 +7,17 @@ public class TheRatioOfProductToTheSum {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         double sum = 0;
-        double k = 0;
+        int number = n;
+        int product = 1;
         if (n >= 0 && n <= 2 * Math.pow(10, 9)) {
-            int product = 1;
-            int temp = n;
-            while (temp != 0) {
-                int digit = temp % 10;
+            while (number > 0) {
+                int digit = number % 10;
                 product *= digit;
-                temp /= 10;
+                sum += digit;
+                number /= 10;
             }
-            int digitSum = 0;
-            temp = n;
-            while (temp != 0) {
-                int digit = temp % 10;
-                digitSum += digit;
-                temp /= 10;
-            }
-
+            double ratio = (double) product / sum;
+            System.out.printf("%.3f\n", ratio);
         }
     }
 }
