@@ -9,7 +9,7 @@ public class SumAndAmount {
         int amount = 0;
         while (sc.hasNext()) {
             int num = sc.nextInt();
-
+            System.out.println(Math.);
 
             sum += num;
             amount++;
